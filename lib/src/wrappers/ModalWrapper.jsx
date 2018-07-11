@@ -153,6 +153,7 @@ export default class ModalWrapper extends PureComponent {
       onClose,
       onSetToday,
       isAccepted,
+      container,
       ...other
     } = this.props;
 
@@ -183,6 +184,7 @@ export default class ModalWrapper extends PureComponent {
           cancelLabel={cancelLabel}
           clearable={clearable}
           showTodayButton={showTodayButton}
+          container={container}
         >
           {children}
         </ModalDialog>
